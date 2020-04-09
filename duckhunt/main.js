@@ -1,85 +1,136 @@
-const distance = 10;
+var score = 0;
+var scoreDiv = document.getElementById("counter");
+// var newCounter = document.querySelector("#counter");
+
+const DISTANCE = 10;
 let duckElement = document.getElementById("duck");
-let screenWidth = window.innerWidth - 100;
-let screenHeight = window.innerHeight - 100;
 
-duckElement.style.left = "600px";
-duckElement.style.top = "300px";
+duckElement.style.left = "800px";
+duckElement.style.top = "50px";
 
-let duckX = parseInt(duckElement.style.left);
-let duckY = parseInt(duckElement.style.top);
+let duckx = parseInt(duckElement.style.left);
+let ducky = parseInt(duckElement.style.top);
+let screenWidth = window.innerWidth - 10;
+let screenHeight = window.innerHeight - 10;
+
 let directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
+
 let movements = 20;
 
-function randomNumber() {
-  return Math.floor(Math.random() * 8);
+function points() {
+    if (score < 10){
+
+    
 }
+    else {
+
+        alert("we shall feast");
+        window.location.reload();
+    }
+    updateScores();
+}  
+function updateScores() {
+    scoreDiv.innerHTML = score;
+  
+}
+
+function newDuck(element) {
+    moveElementRandomly(duckElement);
+
+}
+
+function moveElementRandomly(element) {
+    element.style.position = "absolute";
+    element.style.left = Math.floor(Math.random(screenWidth) * 2 ) + "px";
+    element.style.top = Math.floor(Math.random(screenHeight) * 2 ) + "px";
+}
+
+function randomNumber() {
+    return Math.floor(Math.random() * directions.length);
+}
+
 
 function doRandom() {
-  Fly(directions[randomNumber(0, directions.length)]);
+    fly(directions[randomNumber(0, directions.length)]);
 }
 
-function Fly(compass) {
-  switch (compass) {
-    case "N":
-      duckY -= distance;
-      break;
+function fly(compass) {
 
-    case "NE":
-      duckX += distance;
-      duckY += distance;
-      break;
+switch (compass) {
+    case 'N':
+        ducky -= DISTANCE;
+        break;
 
-    case "E":
-      duckX += distance;
-      break;
+        case 'NE':
+            duckx += DISTANCE;
+            ducky += DISTANCE;
+            break;
 
-    case "SE":
-      duckX += distance;
-      duckY += distance;
-      break;
+        case 'E':
+            duckx += DISTANCE;
+        break;
 
-    case "S":
-      duckY += distance;
-      break;
+        case 'SE':
+            duckx += DISTANCE;
+            ducky += DISTANCE;
+        break;
 
-    case "SW":
-      duckX -= distance;
-      duckY += distance;
-      break;
+        case 'S':
+            ducky += DISTANCE;
+        break;
 
-    case "W":
-      duckX -= distance;
-      break;
+        case 'SW':
+            duckx -= DISTANCE;
+            ducky -= DISTANCE;
+        break;
 
-    case "NW":
-      duckX -= distance;
-      duckY += distance;
-      break;
+        case 'W':
+            duckx -= DISTANCE;
+        break;
+
+        case 'NW':
+            duckx -= DISTANCE;
+            ducky -= DISTANCE;
+         break;
+}
+
+if (duckx > screenWidth) {
+    duckx = screenWidth;
   }
 
-  if (duckX > screenWidth) {
-    duckX = screenWidth;
+  if (ducky > screenHeight) {
+    ducky = screenHeight;
+  }
+  if (duckx < 0) {
+      duckx = 0;
+  }
+  if (ducky < 0) {
+      ducky = 0;
   }
 
-  if (duckY > screenHeight) {
-    duckY = screenHeight;
-  }
+duckElement.style.left = duckx + "px";
+duckElement.style.top = ducky + "px";
 
-  if (duckY > screenWidth) {
-    duckY = screenWidth;
-  }
-
-  if (duckX > screenHeight) {
-    duckX = screenHeight;
-  }
-
-  duckElement.style.left = duckX + "px";
-  duckElement.style.top = duckY + "px";
 }
 
 setTimeout(function() {
-  setInterval(() => {
+    setInterval(() => {
     doRandom();
-  }, Math.random() * 100);
+}, Math.random() * 100);
+}, 100);
+
+function handleDuckClick(duck) {
+    score++;
+    duckElement.style.display = "none";
+
+
+
+setTimeout(function() {
+    doRandom();
+    newDuck();
+    duckElement.style.display = "block";
 }, 1000);
+
+points();
+
+}
