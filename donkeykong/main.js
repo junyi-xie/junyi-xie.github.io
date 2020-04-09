@@ -61,7 +61,7 @@ function movedk(evt) {
 
   function Jump() {
     var dk = $("#dk");
-    dk.animate({ bottom: "500px" }, "slow");
+    dk.animate({ bottom: "600px" }, "slow");
     dk.animate({ bottom: "20px" }, "slow");
   }
 
