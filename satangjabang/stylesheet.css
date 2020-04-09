@@ -1,0 +1,323 @@
+#container {
+	width: 1600px;
+	height: 800px;
+}
+
+#header {
+	width: 1600px;
+	height: 80px;
+	background-color: #7AD7F0;
+	border: solid black;
+}
+
+#logo {
+	position: absolute;
+	left: 660px;
+}
+
+#vlag {
+	width: 200px;
+	height: 80px;
+	position: relative;
+	float: right;
+}
+
+#body {
+	border: solid black;
+	width: 1600px;
+	height: 600px;
+	top: 130px;
+	position: absolute;
+	z-index: 1;
+}
+
+#footer {
+	width: 1600px;
+	height: 80px;
+	position: absolute;
+	top: 740px;
+}
+
+#footer2 {
+	position: absolute;
+	left: 594px;
+	top: -3px;
+	height: 80px;
+	width: 600px;
+	border: solid black;
+	text-align: center;
+}
+
+#footer3 {
+	top: -3px;
+	position: absolute;
+	height: 80px;
+	width: 403px;
+	left: 1197px;
+	border: solid black;
+	background-color: #7AD7F0;
+}
+
+#footer4 {
+	top: -3px;
+	left: 0px;
+	height: 80px;
+	width: 591px;
+	position: absolute;
+	border: solid black;
+}
+
+#foottekst {
+	text-align: center;
+	top: 20px;
+	position: relative;
+	font-size: 21px;
+}
+
+#foottekst2 {
+	text-align: center;
+	top: 20px;
+	position: relative;
+	font-size: 21px;
+}
+
+#foottekst3 {
+	text-align: center;
+	top: 20px;
+	position: relative;
+	font-size: 21px;
+}
+
+#tekst {
+	width: 570px;
+	height: 580px;
+	position: absolute;
+	border: solid black;
+	top: 10px;
+	left: 515px;
+	background-color: white;
+}
+
+#contact {
+	width: 545px;
+	height: 550px;
+	position: absolute;
+	border: solid black;
+	left: 10px;
+	top: 10px;
+}
+
+#tekst2 {
+	width: 570px;
+	height: 580px;
+	position: absolute;
+	border: solid black;
+	top: -3px;
+	left: 515px;
+	background-color: white;
+}
+
+#letter {
+	margin: 10px;
+	top: 0px;
+	position: absolute;
+	font-size: 20px;
+}
+
+#letter2 {
+	margin: 10px;
+	top: 0px;
+	position: absolute;
+	font-size: 30px;
+	width: 96%;
+}
+
+#letterg {
+	font-size: 25px;
+}
+
+#letterg2 {
+	font-size: 22px;
+}
+
+#letterg22 {
+	font-size: 22px;
+}
+
+#letterg222 {
+	font-size: 22px;
+}
+
+#letterg2222 {
+	font-size: 22px;
+}
+
+#navigation {
+	position: relative;
+	width: 1600px;
+	height: 30px;
+	top: 5px;
+	text-align: center;
+}
+
+#navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+	display: block;
+	background-color: white;
+	padding: 2px;
+}
+
+#navigation ul li {
+	display: inline-block;
+}
+
+#navigation a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#navigation ul li a:hover {
+	text-decoration: underline;
+}
+
+#navigation ul ul {
+	display: none;
+	position: absolute;
+}
+
+#navigation ul li:hover>ul {
+	display: inherit;
+}
+
+#navigation ul ul li {
+	width: 180px;
+	float: none;
+	display: list-item;
+	position: relative;
+	margin-left: -48px;
+	background-color: white;
+	text-align: left;
+	top: -3px;
+}
+
+#vid {
+	position: absolute;
+	left: 1220px;
+	top: 42px;
+	z-index: 2;
+	height: 230px;
+	background-color: black;
+
+}
+
+#txt1 {
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -18px;
+}
+
+#txt2 {
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -19px;
+}
+
+#sponsor2 {
+	position: absolute;
+	left: 300px;
+	top: 220px;
+}
+
+#sponsor3 {
+	position: absolute;
+	left: 300px;
+	top: 420px;
+}
+
+#sponsor1 {
+	position: absolute;
+	left: 300px;
+	top: 20px;
+}
+
+#txt3 {
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -18px;
+}
+
+#txt4 {
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -17px;
+}
+
+#form1 {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#form2 {
+	margin-top: 20px;
+}
+
+#submit {
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 20px;
+}
+
+.mySlides {
+	width: 1600px;
+	height: 600px;
+	top: 130px;
+	position: absolute;
+	z-index: -2;
+}
+
+.slideshow-container {
+	width: 1600px;
+	height: 600px;
+	top: -130px;
+	position: absolute;
+	z-index: -2;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+#next {
+	position: absolute;
+	left: 460px;
+	top: 460px;
+}
