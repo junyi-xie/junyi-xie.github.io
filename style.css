@@ -66,10 +66,11 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #431C68;
 }
 
 .typewriter h1 {
+  font-size: 250%;
   font-family: monospace;
   font-weight: bold;
   color: white;
