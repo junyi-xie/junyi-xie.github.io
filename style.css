@@ -136,8 +136,8 @@ button.scroll:hover {
 /* responsive for smartphones max width of 375px (home page) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .typewriter h1 {
-    font-size: 17px;
-    letter-spacing: 0.1em;
+    font-size: 18px;
+    letter-spacing: 0;
   }
 
   .icon {
@@ -145,12 +145,12 @@ button.scroll:hover {
   }
 
   .icon a {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .icon a span {
-    padding: 8px;
-    font-size: 1.1rem;
+    padding: 10px;
+    font-size: 1.2rem;
   }
 
   button.scroll {
@@ -171,12 +171,12 @@ button.scroll:hover {
   }
 
   .icon a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .icon a span {
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
