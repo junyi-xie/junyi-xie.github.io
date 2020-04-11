@@ -39,7 +39,7 @@ body {
 }
 
 /* container for the home page */
-#container {
+#wrapper {
   width: 100%;
   height: 100vh;
   background: var(--primary-background-color);
@@ -276,14 +276,14 @@ button.scroll:hover {
   width: 100%;
 }
 
-#aboutme .wrapper {
+#aboutme .container {
   border-radius: 20px;
   width: 1140px;
   margin: 0 auto;
   box-shadow: 0 0 20px rgba(0,0,0,.2);
 }
 
-#aboutme .wrapper h1 {
+#aboutme .container h1 {
   font-size: 250%;
   padding: 20px 0;
   text-transform: uppercase;
@@ -291,33 +291,33 @@ button.scroll:hover {
   color: var(--primary-color);
 }
 
-#aboutme .wrapper .content {
+#aboutme .container .content {
   margin: 10px;
   width: 1140px;
   margin: 0 auto;
   display: flex;
 }
 
-#aboutme .wrapper .content .profile {
+#aboutme .container .content .profile {
 display: flex;
 flex-direction: column;
 align-items: center;
 padding-bottom: 20px;
 }
 
-#aboutme .wrapper .content .profile img {
+#aboutme .container .content .profile img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   margin: 0 20px 10px 20px;  
 }
 
-#aboutme .wrapper .content .profile h2 {
+#aboutme .container .content .profile h2 {
   font-size: 24px;
   color: var(--tertiary-color);
 }
 
-#aboutme .wrapper .content p {
+#aboutme .container .content p {
   margin-right: 20px;
   text-align: justify;
   line-height: 22px;
@@ -341,13 +341,13 @@ padding-bottom: 20px;
   width: 100%;
 }
 
-#project .wrapper {
+#project .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-#project .wrapper h1 {
+#project .container h1 {
   font-size: 250%;
   margin: 10px 0;
   text-transform: uppercase;
@@ -356,7 +356,7 @@ padding-bottom: 20px;
   color: var(--secondary-color);
 }
 
-#project .wrapper .content {
+#project .container .content {
   width: 1140px;
   margin: 0 auto;
 }
@@ -367,13 +367,13 @@ padding-bottom: 20px;
   width: 100%;
 }
 
-#contact .wrapper {
+#contact .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-#contact .wrapper h1 {
+#contact .container h1 {
   font-size: 250%;
   margin: 10px 0;
   text-transform: uppercase;
@@ -382,7 +382,7 @@ padding-bottom: 20px;
   color: var(--primary-color);
 }
 
-#contact .wrapper .content {
+#contact .container .content {
   width: 1140px;
   margin: 0 auto;
 }
