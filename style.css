@@ -124,10 +124,10 @@ button.scroll {
   padding: 10px 12px;
   text-transform: uppercase;
   border: solid 2px transparent;
+  cursor: pointer;
 }
 
 button.scroll:hover {
-  cursor: pointer;
   color: var(--secondary-color);
   background: var(--primary-background-color);
   border: solid 2px var(--secondary-background-color);
@@ -368,17 +368,16 @@ padding-bottom: 20px;
   width: 100%;
 }
 
+
+
 #contact .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  width: 1140px;
 }
 
 #contact .container h1 {
   font-size: 250%;
   margin: 10px 0;
   text-transform: uppercase;
-  /* font-family: cursive; */
   text-align: center;
   color: var(--primary-color);
 }
@@ -387,6 +386,23 @@ padding-bottom: 20px;
   width: 1140px;
   margin: 0 auto;
 }
+
+#contact .container .content .form-container {
+  flex-direction: column;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* RESPONSIVE BREAKPOINTS */
 
