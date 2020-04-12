@@ -238,7 +238,7 @@ button.scroll:hover {
   }
 
   button.scroll {
-    width: 300px;
+    width: 350px;
     padding: 25px;
     font-size: 1.5rem;
   }
@@ -357,7 +357,7 @@ padding-bottom: 20px;
   color: var(--secondary-color);
 }
 
-#project .container .content {
+.wrapper .content {
   width: 1140px;
   margin: 0 auto;
 }
@@ -369,9 +369,9 @@ padding-bottom: 20px;
 }
 
 
-
-#contact .container {
+.container {
   width: 1140px;
+  margin: 0 auto;
 }
 
 #contact .container h1 {
@@ -387,12 +387,60 @@ padding-bottom: 20px;
   margin: 0 auto;
 }
 
-#contact .container .content .form-container {
+#contact .container .content .form-container form {
   flex-direction: column;
   display: flex;
+  align-items: center§;
 }
 
+#contact .container .content .form-container input[type="text"] {
+  width: 200px;
+  padding: 10px;
+}
+#contact .container .content .form-container input[type="text"]:hover {}
+#contact .container .content .form-container input[type="text"]:focus {}
+#contact .container .content .form-container input[type="text"]:not() {}
 
+#contact .container .content .form-container input[type="email"] {
+  width: 200px;
+  padding: 10px;
+}
+#contact .container .content .form-container input[type="email"]:hover {}
+#contact .container .content .form-container input[type="email"]:focus {}
+#contact .container .content .form-container input[type="email"]:not() {}
+
+#contact .container .content .form-container textarea {
+  width: 200px;
+  padding: 10px;
+}
+#contact .container .content .form-container textarea:hover {}
+#contact .container .content .form-container textarea:focus {}
+#contact .container .content .form-container textarea:not() {}
+
+#contact .container .content .form-container input[type="submit"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 200px;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  outline: none;
+  background: var(--primary-background-color);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  border: solid 2px transparent;
+  cursor: pointer;
+
+}
+#contact .container .content .form-container input[type="submit"]:hover {
+  color: var(--primary-color);
+  background: var(--seondary-background-color);
+  border: solid 2px var(--primary-background-color);
+  box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.19), 2px 3px 4px rgba(0, 0, 0, 0.22);
+  transition: all ease 0.4s;
+}
+#contact .container .content .form-container input[type="submit"]:focus {}
+#contact .container .content .form-container input[type="submit"]:not() {}
 
 
 
