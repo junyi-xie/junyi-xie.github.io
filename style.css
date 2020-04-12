@@ -14,11 +14,9 @@ body {
 :root {
   --primary-background-color: #bb7cda;
   --secondary-background-color: #fff;
-  --tertiary-background-color: #000;
   --primary-color: #bb7cda;
   --secondary-color: #fff;
   --tertiary-color: #000;
-  /* social icons color  */
   --in-color: #0072b1;
   --github-color: #6e5494;
 }
@@ -83,36 +81,8 @@ body {
   }
 }
 
-.icon {
-  margin: 50px 0 120px;
-}
-
-.icon a {
-  outline: none;
-  border: none;
-  color: var(--secondary-color);
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.icon a span {
-  padding: 10px;
-  font-size: 20px;
-}
-
-.icon a.in:hover {
-  color: var(--in-color);
-  transition: all ease 0.4s;
-}
-
-.icon a.git:hover {
-  color: var(--github-color);
-  transition: all ease 0.4s;
-}
-
 button.scroll {
+  margin-top: 150px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 200px;
   border-radius: 20px;
@@ -140,19 +110,6 @@ button.scroll:hover {
   .typewriter h1 {
     font-size: 18px;
     letter-spacing: 0;
-  }
-
-  .icon {
-    margin: 40px 0 100px;
-  }
-
-  .icon a {
-    font-size: 1.2rem;
-  }
-
-  .icon a span {
-    padding: 10px;
-    font-size: 1.2rem;
   }
 
   button.scroll {
@@ -199,18 +156,6 @@ button.scroll:hover {
     font-size: 300%;
   }
 
-  .icon {
-    margin: 70px 0 160px;
-  }
-
-  .icon a {
-    font-size: 1.7rem;
-  }
-
-  .icon a span {
-    font-size: 2.2rem;
-  }
-
   button.scroll {
     width: 250px;
     padding: 15px;
@@ -224,19 +169,6 @@ button.scroll:hover {
     font-size: 500%;
   }
 
-  .icon {
-    margin: 90px 0 200px;
-  }
-
-  .icon a {
-    font-size: 2rem;
-  }
-
-  .icon a span {
-    padding: 15px;
-    font-size: 2.5rem;
-  }
-
   button.scroll {
     width: 350px;
     padding: 25px;
@@ -244,81 +176,165 @@ button.scroll:hover {
   }
 }
 
-#above {
+#diagonal-top {
   box-sizing: border-box;
   width: 100%;
   height: 0;
   border-top: 60px solid var(--primary-background-color);
-  border-left: solid 100vw transparent;
+  border-right: solid 100vw transparent;
 }
 
-#above2 {
+#diagonal-bottom {
   box-sizing: border-box;
   width: 100%;
   height: 0;
   border-bottom: 60px solid var(--primary-background-color);
-  border-right: solid 100vw transparent;
+  border-left: solid 100vw transparent;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  #above {
+  #diagonal-top {
     border-top: 20px solid var(--primary-background-color);
   }
 
-  #above2 {
+  #diagonal-bottom {
     border-bottom: 20px solid var(--primary-background-color);
   }
 }
 
 #aboutme {
-  margin-top: 40px;
+  margin: 50px 0;
   background: var(--secondary-background-color);
-  height: 450px;
   width: 100%;
 }
 
 #aboutme .container {
-  border-radius: 20px;
-  width: 1140px;
-  margin: 0 auto;
-  box-shadow: 0 0 20px rgba(0,0,0,.2);
-}
-
-#aboutme .container h1 {
-  font-size: 250%;
-  padding: 20px 0;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--primary-color);
-}
-
-#aboutme .container .content {
-  margin: 10px;
-  width: 1140px;
+  width: 90%;
+  max-width: 90%;
   margin: 0 auto;
   display: flex;
 }
 
-#aboutme .container .content .profile {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-bottom: 20px;
+#aboutme .container section.content-left {
+  border-radius: 20px;
+  width: 20%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
 }
 
-#aboutme .container .content .profile img {
-  width: 250px;
-  height: 250px;
+#aboutme .container section.content-left .avatar {
+  width: 60%;
+  height: auto;
   border-radius: 50%;
-  margin: 0 20px 10px 20px;  
+  margin: 25px 0;
 }
 
-#aboutme .container .content .profile h2 {
-  font-size: 24px;
-  color: var(--tertiary-color);
+#aboutme .container section.content-left h2 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#aboutme .container .content p {
+#aboutme .container section.content-left .location {
+  padding: 5px;
+}
+
+#aboutme .container section.content-left .location span {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+#aboutme .container section.content-left .heading {
+  padding: 10px;
+  background: var(--primary-background-color);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 25px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#aboutme .container section.content-left .heading p {
+  text-align: center;
+}
+
+#aboutme .container section.content-left .info {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+#aboutme .container section.content-left .info a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+#aboutme .container section.content-left .info a.in:hover {
+  color: var(--in-color);
+  transition: all ease 0.4s;
+}
+
+#aboutme .container section.content-left .info a.git:hover {
+  color: var(--github-color);
+  transition: all ease 0.4s;
+}
+
+#aboutme .container section.content-left .info span {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+#aboutme .container section.content-left button.email {
+  margin: 30px 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  outline: none;
+  background: var(--primary-background-color);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  border: solid 2px transparent;
+  cursor: pointer;
+}
+
+#aboutme .container section.content-left button.email:hover {
+  color: var(--primary-color);
+  background: var(--secondary-background-color);
+  border: solid 2px var(--primary-background-color);
+  box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.19), 2px 3px 4px rgba(0, 0, 0, 0.22);
+  transition: all ease 0.4s;
+}
+
+#aboutme .container section.content-right {
+  margin-left: 20px;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#aboutme .container section.content-right .header {
+  padding: 30px;
+}
+
+#aboutme .container section.content-right .header h1 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+#aboutme .container section.content-right .header hr {
+  margin: 0 auto;
+  width: 100px;
+  border: solid 2px var(--primary-background-color);
+  margin-bottom: 20px;
+}
+
+#aboutme .container section.content-right .header p {
   margin-right: 20px;
   text-align: justify;
   line-height: 22px;
@@ -327,14 +343,46 @@ padding-bottom: 20px;
   color: var(--tertiary-color);
 }
 
+#aboutme .container section.content-right .title {
+  padding: 0 30px;
+}
+#aboutme .container section.content-right .title h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+#aboutme .container section.content-right .title hr {
+  width: 150px;
+  margin: 0 auto;
+  border: solid 2px var(--primary-background-color);
+}
 
+#aboutme .container section.content-right .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 25px;
+  padding: 30px;
+}
 
+#aboutme .container section.content-right .wrapper .card {
+  background: var(--primary-background-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--secondary-color);
+}
 
-
-
-
-
-
+#aboutme .container section.content-right .wrapper .card p {
+  margin-left: 5px;
+  font-size: 16px;
+}
 
 #project {
   background: #bb7cda;
@@ -342,115 +390,11 @@ padding-bottom: 20px;
   width: 100%;
 }
 
-#project .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#project .container h1 {
-  font-size: 250%;
-  margin: 10px 0;
-  text-transform: uppercase;
-  /* font-family: cursive; */
+#project h1 {
   text-align: center;
+  font-size: 26px;
   color: var(--secondary-color);
 }
-
-.wrapper .content {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-#contact {
-  background: #fff;
-  height: 1000px;
-  width: 100%;
-}
-
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-#contact .container h1 {
-  font-size: 250%;
-  margin: 10px 0;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--primary-color);
-}
-
-#contact .container .content {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-#contact .container .content .form-container form {
-  flex-direction: column;
-  display: flex;
-  align-items: center§;
-}
-
-#contact .container .content .form-container input[type="text"] {
-  width: 200px;
-  padding: 10px;
-}
-#contact .container .content .form-container input[type="text"]:hover {}
-#contact .container .content .form-container input[type="text"]:focus {}
-#contact .container .content .form-container input[type="text"]:not() {}
-
-#contact .container .content .form-container input[type="email"] {
-  width: 200px;
-  padding: 10px;
-}
-#contact .container .content .form-container input[type="email"]:hover {}
-#contact .container .content .form-container input[type="email"]:focus {}
-#contact .container .content .form-container input[type="email"]:not() {}
-
-#contact .container .content .form-container textarea {
-  width: 200px;
-  padding: 10px;
-}
-#contact .container .content .form-container textarea:hover {}
-#contact .container .content .form-container textarea:focus {}
-#contact .container .content .form-container textarea:not() {}
-
-#contact .container .content .form-container input[type="submit"] {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 200px;
-  border-radius: 20px;
-  color: var(--secondary-color);
-  outline: none;
-  background: var(--primary-background-color);
-  font-weight: bold;
-  font-size: 14px;
-  padding: 10px 12px;
-  text-transform: uppercase;
-  border: solid 2px transparent;
-  cursor: pointer;
-
-}
-#contact .container .content .form-container input[type="submit"]:hover {
-  color: var(--primary-color);
-  background: var(--seondary-background-color);
-  border: solid 2px var(--primary-background-color);
-  box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.19), 2px 3px 4px rgba(0, 0, 0, 0.22);
-  transition: all ease 0.4s;
-}
-#contact .container .content .form-container input[type="submit"]:focus {}
-#contact .container .content .form-container input[type="submit"]:not() {}
-
-
-
-
-
-
-
-
-
-
 
 /* RESPONSIVE BREAKPOINTS */
 

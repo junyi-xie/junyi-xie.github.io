@@ -16,72 +16,88 @@
             <h1>Welcome to my Portfolio.</h1>
         </div> 
 
-        <div class="icon" id="icon">
-            <a class="in" href="https://www.linkedin.com/in/junyi-xie/"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
-            <a class="git" href="https://github.com/junyi-xie"><i class="fab fa-github"></i><span>GitHub</span></a>
-        </div>
-
         <button class="scroll" id="scroll" onclick="scrollToProject()">view my projects</button>
 
     </div>
     <!-- end of home div. -->
 
+    <!-- Diagonal which creates a cool effect for the page. (top diagonal) -->
+    <div id="diagonal-top"></div>
+    <!-- End. -->
 
-    <div id="above"></div>
     <div id="aboutme">
-        
+              
         <div class="container">
-            
-            <h1>about me</h1>
 
-                <div class="content">
-
-                    <div class="profile">
-
-                        <img src="me.jpg" alt="placeholder">
-                        <h2>Junyi Xie, 17</h2>
-
-                    </div>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ratione numquam saepe at, qui voluptatum laboriosam vel incidunt non aperiam molestias esse assumenda nesciunt corporis, vero asperiores, natus nisi nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore assumenda doloribus quas? Aut rem facilis sit pariatur officiis nulla cum eum tenetur, natus, totam eos rerum id, corrupti voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod minus vitae aut doloremque debitis tenetur at ipsum nulla facilis veritatis eum optio earum exercitationem fuga qui obcaecati, beatae nemo laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ratione ducimus exercitationem eius voluptates officiis quam dolor suscipit, deserunt tempora, non quod. Maxime debitis eaque ea saepe. Blanditiis, reprehenderit esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facilis. Delectus repudiandae inventore ex rem molestiae officiis consectetur recusandae quae excepturi molestias quis corporis, vitae sint ab natus cum esse.</p>
-
-            </div>
-            
-        </div>
-        
-    </div>
-
-    <div id="above2"></div>
-    <div id="project">
-
-        <div class="container">
-            <h1>projects</h1>
-            <div class="content">
-                
-            </div>
-        </div>
-    </div>
-
-    <div id="contact">
-
-        <div class="wrapper">
-            <h1>contact</h1>
-            <div class="content">
-
-                <div  class="form-container">
-                
-                <form action="mailto:yunyi.xie@outlook.com">
+            <!-- Left section. -->
+            <section class="content-left">
                     
-                    <input type="text" id="name" placeholder="Name" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <textarea id="message" required></textarea>
-                    <input type="submit" value="Submit">
-                </form>
+                <img class="avatar" src="avatar.jpg" alt="avatar">
+    
+                <h2>Junyi Xie</h2>
+                
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i><span>The Hague, Netherlands</span>
+                </div>
+                    
+                <div class="heading">
+                    <p>Student & Front-End Developer</p>
+                </div>
+                    
+                <div class="info">
+                    <!-- Junyi Xie LinkedIn profile. -->
+                    <a class="in" href="https://www.linkedin.com/in/junyi-xie">
+                    <i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
 
+                    <!-- Junyi Xie GitHub profile. -->
+                    <a class="git" href="https://github.com/junyi-xie">
+                    <i class="fab fa-github"></i><span>GitHub</span></a>
                 </div>
 
-            </div>
+                <!-- Sends an email to yunyi.xie@outlook.com -->
+                <button class="email" onclick="mail()">Contact me</button>
+
+            </section>
+
+            <!-- Right section. -->
+            <section class="content-right">
+                
+                <div class="header">
+                    <h1>about me</h1>
+                    <hr/>
+                    <p>I'm a first-year student studying "Computer Software and Media Applications". I'm very passionate about coding and love taking on challenges. Besides coding and going to school I also love to go outside and watch anime in my free time.</p>
+                </div>
+
+                <div class="title">
+                    <h2>my specialties</h2>
+                    <hr/>
+                </div>
+
+                <div class="wrapper">
+                    <!-- Skill #1, html, css and js. -->
+                    <div class="card"><i class="fas fa-laptop-code fa-2x"></i><p>My knowledge in HTML, CSS, and JavaScript is great, which allows me to build good and functioning (web)applications.</p></div>
+                    <!-- Skill #2, teamwork and reliable. -->
+                    <div class="card"><i class="fas fa-user-friends fa-2x"></i><p>Working in teams is as easy as walking for me. I can communicate great with other people and always finish my assigned work before deadlines.</p></div>
+                    <!-- Skill #3, designing and UI/UX. -->
+                    <div class="card"><i class="fas fa-paint-brush fa-2x"></i><p>I have a keen eye for building fantastic user interfaces and designing websites in general.</p></div>
+                    <!-- Skill #4, php and sql. -->
+                    <div class="card"><i class="fab fa-php fa-3x"></i><p>I possess above-average knowledge in Backend programming languages, for example, PHP and SQL.</p></div>
+                </div>
+            
+            </section>
+
         </div>
+
+    </div>
+
+    <!-- Diagonal which creates a cool effect for the page. (bottom diagonal) -->
+    <div id="diagonal-bottom"></div>
+    <!-- End. -->
+
+    <div id="project">
+
+        <h1>projects</h1>
+            
     </div>
 
     <script src="main.js"></script>
