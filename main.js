@@ -1,10 +1,10 @@
 // Function for the (arrow key down) when being onclicked it will go to the div with id project.
 function scrollToProject() {
-  var project = document.getElementById("project");
+  var project = document.getElementById("projects");
   project.scrollIntoView({ behavior: "smooth" });
 }
 
-// Typewriting javascript effect. CREDIT TO https://stackoverflow.com/users/2417833/scraaappy
+// Typewriting javascript effect.
 var messages = ["I am Junyi Xie.","I am a Student.","I am a Front-End Developer."];
 var rank = 0;
 
