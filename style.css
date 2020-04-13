@@ -204,6 +204,11 @@ body {
   margin: 25px 0;
 }
 
+#aboutme .container section.content-left .avatar:hover {
+  transform: scale(1.02);
+  transition: all ease 0.4s;
+}
+
 #aboutme .container section.content-left h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
