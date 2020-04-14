@@ -15,7 +15,7 @@ body {
   --primary-background-color: #bb7cda;
   --secondary-background-color: #fff;
   --tertiary-background-color: #000;
-  --quaternary-background-color: #B567DA;
+  --quaternary-background-color: #b567da;
   --primary-color: #bb7cda;
   --secondary-color: #fff;
   --tertiary-color: #000;
@@ -73,8 +73,8 @@ body {
 /* mobile. */
 @media screen and (max-width: 500px) {
   #home .typewriter h1 {
-   font-size: 24px;
-   letter-spacing: 0.1em;
+    font-size: 24px;
+    letter-spacing: 0.1em;
   }
 }
 
@@ -132,8 +132,8 @@ body {
 /* laptop. */
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
   #home button.scroll {
-   width: 350px;
-   font-size: 24px;
+    width: 350px;
+    font-size: 24px;
   }
 }
 
@@ -393,64 +393,6 @@ body {
   margin: 0 auto;
   border: solid 2px var(--secondary-background-color);
   margin-bottom: 20px;
-}
-
-#projects .container .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
-}
-
-#projects .container .wrapper .title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects .container .wrapper .title h2 {
-  text-align: center;
-  text-transform: capitalize;
-  background: transparent;
-  color: var(--secondary-color);
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#projects .container .wrapper .title .project {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background: var(--secondary-background-color);
-}
-
-#projects .container .wrapper .title .project:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-  transition: all ease 0.4s;
-}
-
-#projects .container .wrapper .title .project span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: var(--tertiary-background-color);
-  border-radius: 20px;
-  color: var(--secondary-color);
-  font-size: 28px;
-}
-
-#projects .container .wrapper .title .project img {
-  border-radius: 20px;
-  height: 100%;
-  display: block;
-  width: 100%;
-  object-fit: fill;
 }
 
 .footer {
