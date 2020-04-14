@@ -1,10 +1,10 @@
-// Function for the (arrow key down) when being onclicked it will go to the div with id project.
+// Function for the (arrow key down) when being onclicked it will go to the div with id projects.
 function scrollToProject() {
   var project = document.getElementById("projects");
   project.scrollIntoView({ behavior: "smooth" });
 }
 
-// Typewriting javascript effect.
+// Typewriting.
 var messages = ["I am Junyi Xie.","I am a Student.","I am a Front-End Developer."];
 var rank = 0;
 
@@ -25,6 +25,7 @@ function changeTxt(e){
     }, 1000);
 }
 
+// Onclick adds mailto.
 function mail(){
   location.href='mailto:yunyi.xie@outlook.com';
 }

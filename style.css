@@ -27,29 +27,6 @@ body {
   display: none;
 }
 
-/* container for the home page */
-#home {
-  width: 100%;
-  height: 100vh;
-  background: var(--primary-background-color);
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#home .typewriter h1 {
-  font-size: 180%;
-  font-weight: bold;
-  color: var(--secondary-color);
-  overflow: hidden;
-  border-right: 0.2em solid #fff;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.2em;
-  animation: typing 2.5s steps(20, end), blink-caret 0.75s step-end infinite;
-}
-
 /* The typing effect */
 @keyframes typing {
   from {
@@ -71,20 +48,93 @@ body {
   }
 }
 
+#home {
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-background-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home .typewriter h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  overflow: hidden;
+  border-right: 0.2em solid #fff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+  animation: typing 2.5s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+/* mobile. */
+@media screen and (max-width: 500px) {
+  #home .typewriter h1 {
+   font-size: 24px;
+   letter-spacing: 0.1em;
+  }
+}
+
+/* tablet. */
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+  #home .typewriter h1 {
+    font-size: 32px;
+    letter-spacing: 0.15em;
+  }
+}
+
+/* laptop. */
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  #home .typewriter h1 {
+    font-size: 40px;
+  }
+}
+
 #home button.scroll {
-  margin-top: 80px;
+  margin-top: 100px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 200px;
+  width: 400px;
   border-radius: 20px;
   color: var(--primary-color);
   outline: none;
   background: var(--secondary-background-color);
   font-weight: bold;
-  font-size: 14px;
-  padding: 10px 12px;
+  font-size: 28px;
+  padding: 15px;
   text-transform: uppercase;
   border: solid 2px transparent;
   cursor: pointer;
+}
+
+#home button.scroll:not(focus) {
+  transition: all 0.75s ease;
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+  #home button.scroll {
+    width: 250px;
+    font-size: 16px;
+  }
+}
+
+/* tablet. */
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+  #home button.scroll {
+    width: 300px;
+    font-size: 20px;
+  }
+}
+
+/* laptop. */
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  #home button.scroll {
+   width: 350px;
+   font-size: 24px;
+  }
 }
 
 #home button.scroll:hover {
@@ -93,59 +143,6 @@ body {
   border: solid 2px var(--secondary-background-color);
   box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.19), 2px 3px 4px rgba(0, 0, 0, 0.22);
   transition: all ease 0.4s;
-}
-
-/* mobile. */
-@media only screen and (max-width: 500px) {
-  #home .typewriter h1 {
-    font-size: 20px;
-  }
-
-  #home button.scroll {
-    width: 200px;
-    font-size: 14px;
-    margin-top: 60px;
-  }
-}
-
-/* tablet. */
-@media only screen and (min-width: 500px) {
-  #home .typewriter h1 {
-    font-size: 26px;
-  }
-
-  #home button.scroll {
-    width: 250px;
-    padding: 10px;
-    font-size: 18px;
-  }
-}
-
-/* laptop. */
-@media only screen and (min-width: 1024px) {
-  #home .typewriter h1 {
-    font-size: 32px;
-  }
-
-  #home button.scroll {
-    width: 300px;
-    padding: 15px;
-    font-size: 22px;
-    margin-top: 120px;
-  }
-}
-
-/* desktop. */
-@media only screen and (min-width: 1920px) {
-  #home .typewriter h1 {
-    font-size: 48px;
-  }
-
-  #home button.scroll {
-    width: 350px;
-    padding: 20px;
-    font-size: 24px;
-  }
 }
 
 #diagonal-top {
@@ -466,9 +463,3 @@ body {
   color: var(--secondary-color);
   font-size: 18px;
 }
-
-/* !Responsive break points:
-!Mobile: max-width: 500px
-!Tablet: max-width: 1024px
-!Laptop: min-width: 1224px+
-!Desktop: min-width: 1920px+ */
