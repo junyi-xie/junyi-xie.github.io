@@ -533,14 +533,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
   height: 90%;
   width: 90%;
   overflow: hidden;
 }
 
 #projects .container .wrapper .projects .box:hover img {
-  opacity: 0.1;
+  opacity: 0;
   transition: all ease 0.4s;
 }
 
@@ -549,6 +548,13 @@ body {
   transition: all ease 0.4s;
 }
 
+#projects .container .wrapper .projects .box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background: var(--primary-background-color);
+  border-radius: 20px;
+}
+
+#projects .container .wrapper .projects .box:not(focus),
 #projects .container .wrapper .projects .box img:not(focus),
 #projects .container .wrapper .projects .box p:not(focus) {
   transition: all 0.75s ease;
