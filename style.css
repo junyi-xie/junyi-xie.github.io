@@ -181,17 +181,33 @@ body {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container {
+  grid-template-columns: 1fr;
+  }
 }
 
 #aboutme .container section.content-left {
   border-radius: 20px;
-  width: 20%;
+  width: 100%;
+  box-sizing: border-box;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-left {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
 }
 
 #aboutme .container section.content-left .avatar {
@@ -199,6 +215,16 @@ body {
   height: auto;
   border-radius: 50%;
   margin: 25px 0;
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-left .avatar {
+    width: 50%;
+  }
+}
+
+#aboutme .container section.content-left .avatar:not(focus) {
+  transition: all 0.75s ease;
 }
 
 #aboutme .container section.content-left .avatar:hover {
@@ -216,7 +242,7 @@ body {
 
 #aboutme .container section.content-left .location span {
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #aboutme .container section.content-left .heading {
@@ -232,6 +258,13 @@ body {
 
 #aboutme .container section.content-left .heading p {
   text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-left .heading p {
+    font-size: 16px;
+  }
 }
 
 #aboutme .container section.content-left .info {
@@ -246,13 +279,20 @@ body {
   font-size: 16px;
 }
 
+#aboutme .container section.content-left .info a i.fa-linkedin-in, 
+#aboutme .container section.content-left .info a i.fa-github {
+  font-size: 20px;
+}                          
+
 #aboutme .container section.content-left .info a.in:hover {
   color: var(--in-color);
+  transform: scale(1.01);
   transition: all ease 0.4s;
 }
 
 #aboutme .container section.content-left .info a.git:hover {
   color: var(--github-color);
+  transform: scale(1.01);
   transition: all ease 0.4s;
 }
 
@@ -268,11 +308,21 @@ body {
   outline: none;
   background: var(--primary-background-color);
   font-weight: bold;
-  font-size: 16px;
-  padding: 12px 15px;
+  font-size: 20px;
+  padding: 15px;
   text-transform: uppercase;
   border: solid 2px transparent;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-left button.email {
+    font-size: 18px;
+  }
+}
+
+#aboutme .container section.content-left button.email:not(focus) {
+  transition: all 0.75s ease;
 }
 
 #aboutme .container section.content-left button.email:hover {
@@ -284,10 +334,18 @@ body {
 }
 
 #aboutme .container section.content-right {
-  margin-left: 20px;
   border-radius: 20px;
-  width: 80%;
+  width: 100%;
+  box-sizing: border-box;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-right {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
 }
 
 #aboutme .container section.content-right .header {
@@ -295,10 +353,16 @@ body {
 }
 
 #aboutme .container section.content-right .header h1 {
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-right .header h1 {
+    font-size: 24px;
+  }
 }
 
 #aboutme .container section.content-right .header hr {
@@ -316,6 +380,13 @@ body {
   color: var(--tertiary-color);
 }
 
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-right .header p {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
 #aboutme .container section.content-right .title {
   padding: 0 30px;
 }
@@ -325,6 +396,12 @@ body {
   margin-bottom: 10px;
   text-align: center;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-right .title h2 {
+    font-size: 22px;
+  }
 }
 
 #aboutme .container section.content-right .title hr {
@@ -341,6 +418,13 @@ body {
   padding: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  #aboutme .container section.content-right .wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
 #aboutme .container section.content-right .wrapper .card {
   background: var(--primary-background-color);
   border-radius: 10px;
@@ -352,6 +436,10 @@ body {
   width: 100%;
   box-sizing: border-box;
   color: var(--secondary-color);
+}
+
+#aboutme .container section.content-right .wrapper .card:not(focus) {
+  transition: all 0.75s ease;
 }
 
 #aboutme .container section.content-right .wrapper .card:hover {
