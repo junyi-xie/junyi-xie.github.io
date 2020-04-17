@@ -454,7 +454,7 @@ body {
 
 #projects {
   padding-bottom: 50px;
-  background: #bb7cda;
+  background: var(--primary-background-color);
   width: 100%;
 }
 
@@ -496,69 +496,59 @@ body {
 }
 
 #projects .container .wrapper .projects {
-  padding: 10px;
+  position: relative;
+  background: var(--secondary-background-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
-#projects .container .wrapper .projects h2 {
-  color: var(--secondary-color);
+#projects .container .wrapper .projects .heading {
+  padding: 25px;
+}
+
+#projects .container .wrapper .projects .heading h2 {
+  font-size: 28px;
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 
-#projects .container .wrapper .projects hr {
-  width: 50px;
-  margin: 0 auto;
-  border: solid 2px var(--secondary-background-color);
-  margin-bottom: 20px;
+#projects .container .wrapper .projects .heading p {
+  text-align: justify;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--tertiary-color);
 }
 
 #projects .container .wrapper .projects .box {
-  position: relative;
+  padding: 0 20px 20px 20px;
 }
 
-#projects .container .wrapper .projects .box img{
-  border-radius: 20px;
+#projects .container .wrapper .projects .box h3 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+#projects .container .wrapper .projects .box .thumbnail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#projects .container .wrapper .projects .box .thumbnail .image {
+
+}
+
+#projects .container .wrapper .projects .box .thumbnail .image img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
-#projects .container .wrapper .projects .box p {
-  opacity: 0;
-  color: var(--secondary-color);
-  text-align: justify;
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 90%;
-  width: 90%;
-  overflow: hidden;
-}
 
-#projects .container .wrapper .projects .box:hover img {
-  opacity: 0;
-  transition: all ease 0.4s;
-}
-
-#projects .container .wrapper .projects .box:hover p {
-  opacity: 1;
-  transition: all ease 0.4s;
-}
-
-#projects .container .wrapper .projects .box:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  background: var(--primary-background-color);
-  border-radius: 20px;
-}
-
-#projects .container .wrapper .projects .box:not(focus),
-#projects .container .wrapper .projects .box img:not(focus),
-#projects .container .wrapper .projects .box p:not(focus) {
-  transition: all 0.75s ease;
-}
 
 .footer {
   padding: 25px 0;
