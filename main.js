@@ -5,7 +5,7 @@ function scrollToProject() {
 }
 
 // Typewriting.
-var messages = ["I am Junyi Xie.","I am a Student.","I am a Front-End Developer."];
+var messages = ["I am Junyi Xie.","I am a Student.","I am a Developer."];
 var rank = 0;
 
 // Code for Chrome, Safari and Opera
