@@ -1,6 +1,6 @@
 // Function for the (arrow key down) when being onclicked it will go to the div with id projects.
 function scrollToProject() {
-  var project = document.getElementById("projects");
+  var project = document.getElementById("project");
   project.scrollIntoView({ behavior: "smooth" });
 }
 
