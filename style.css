@@ -297,13 +297,11 @@ body {
 
 #aboutme .container section.content-left .info a.in:hover {
   color: var(--in-color);
-  transform: scale(1.01);
   transition: all ease 0.4s;
 }
 
 #aboutme .container section.content-left .info a.git:hover {
   color: var(--github-color);
-  transform: scale(1.01);
   transition: all ease 0.4s;
 }
 
