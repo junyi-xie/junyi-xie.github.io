@@ -526,31 +526,6 @@ body {
   box-sizing: border-box;
 }
 
-#project .container .content .projects button {
-  border-radius: 10px;
-  color: var(--primary-color);
-  outline: none;
-  background: var(--secondary-background-color);
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px;
-  text-transform: uppercase;
-  border: solid 2px transparent;
-  cursor: pointer;
-}
-
-#project .container .content .projects button:hover {
-  color: var(--secondary-color);
-  background: var(--primary-background-color);
-  border: solid 2px var(--secondary-background-color);
-  box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.19), 2px 3px 4px rgba(0, 0, 0, 0.22);
-  transition: all ease 0.4s;
-}
-
-#project .container .content .projects button:not(focus) {
-  transition: all 0.75s ease;
-}
-
 #project .container .content .projects img {
   width: 100%;
   margin-bottom: 15px;
@@ -585,13 +560,43 @@ body {
   font-size: 24px;
 }
 
-#project .container .content .projects .desc {
+#project .container .content .projects .description {
   margin-bottom: 15px;
 }
 
-#project .container .content .projects .desc p {
+#project .container .content .projects .description p {
   line-height: 22px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+#project .container .content .projects .download button {
+  border-radius: 10px;
+  color: var(--primary-color);
+  outline: none;
+  background: var(--secondary-background-color);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  text-transform: uppercase;
+  border: solid 2px transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+#project .container .content .projects .download button:hover {
+  color: var(--secondary-color);
+  background: var(--primary-background-color);
+  border: solid 2px var(--secondary-background-color);
+  box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.19), 2px 3px 4px rgba(0, 0, 0, 0.22);
+  transition: all ease 0.4s;
+}
+
+#project .container .content .projects .download button:not(focus) {
+  transition: all 0.75s ease;
+}
+
+#project .container .content .projects .download button span {
+  margin-left: 5px;
 }
