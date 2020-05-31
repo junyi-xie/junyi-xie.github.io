@@ -459,7 +459,7 @@ body {
 }
 
 #project {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   background: var(--primary-background-color);
   width: 100%;
 }
