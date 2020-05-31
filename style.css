@@ -20,9 +20,6 @@ body {
   --tertiary-color: #000;
   --in-color: #0072b1;
   --github-color: #6e5494;
-  --satangjabang-color: #feda00;
-  --kinderbalans-color: #8bc600;
-  --bakkerijleiden-color: #e54160;
 }
 
 /* The typing effect */
@@ -568,18 +565,10 @@ body {
   color: var(--secondary-color);
 }
 
-#project .container .content .projects .description p a.satangjabang {
-  color: var(--satangjabang-color);
-  text-decoration: none;
-}
-
-#project .container .content .projects .description p a.kinderbalans {
-  color: var(--kinderbalans-color);
-  text-decoration: none;
-}
-
-#project .container .content .projects .description p a.bakkerijleiden {
-  color: var(--bakkerijleiden-color);
+#project .container .content .projects .description p a {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -615,4 +604,16 @@ body {
 
 #project .container .content .projects .download button span {
   margin-left: 5px;
+}
+
+#footer {
+  background: var(--primary-background-color);
+  padding: 30px;
+}
+
+#footer p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: var(--secondary-color);
 }
